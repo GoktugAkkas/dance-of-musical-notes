@@ -1,0 +1,54 @@
+//playing musical notes
+
+const int buzzer =7;
+
+//musical notes to be used
+int a, b, c, d, e, f, g, h;
+
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(buzzer, OUTPUT);
+
+
+  ////////////////
+  //a=do b=re c=mi d=fa e=sol f=la g=si h=do
+
+
+// musical notes frequency values
+
+a=261,6;
+b=293,7;
+c=329,6;
+d=349,2;
+e=392;
+f=440,0;
+g=493,9;
+h=523,5;
+
+
+
+}
+
+void loop() {
+  tone(buzzer, a);
+  delay(800);
+    tone(buzzer, b);
+  delay(800);
+    tone(buzzer, c);
+  delay(800);
+    tone(buzzer, d);
+  delay(800);
+    tone(buzzer, e);
+  delay(800);
+    tone(buzzer, f);
+  delay(800);
+    tone(buzzer, g);
+  delay(800);
+    tone(buzzer, h);
+  delay(1600);
+
+
+
+
+}
